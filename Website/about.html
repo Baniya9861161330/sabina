@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>My webpage</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta name ="author" content="your name"/>
+<link href="style.css" rel="stylesheet">
+ <link href="css/mystyle.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+
+	<Style>
+   h5{text-align: center;}
+	h1{text-align:center;  color:black;}
+   a{color: white; font-size: 24px;}
+  .fit-image{height: 100%; width: 100%}
+  .title{font-size: 24px; margin-bottom: 50px;}
+</Style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-active active-light" style="background-color: black;">
+  <a class="navbar-brand" href="#"><img src="images/20.jpg"  alt="fitness" style="border-radius: 70%; height: 100px; width: 150px;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Wireframes.html">Wireframes</a>
+      </li>
+
+      </ul>
+
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</div>
+</nav>
+
+<h1>About Us</h1>
+ 
+ <div class="row">
+                        
+                        <div class="col-xl-6 col-sm-6">
+                        
+                            <p>
+                                The Fitness Wiki wants to help you keep going on your fitness goals for 2019. Not like “eat your vegetables, they’re good for you.” More like “here are some choices you can realistically make and feel good about.” Sure, our articles are science-backed and expert-approved. But we’re not the experts—we’re like your friend who’s a little further along—and we know who to turn to for answers and ideas that cut through the noise. We’ll empower you to improve and celebrate you when you get better. We’re non-judgmental, open-minded, and totally get that the struggle is real—because we’ve been there too.The Physical Activity Guidelines for Americans were created by the Office of Disease Prevention and Health Promotion. This publication recommends that all adults should avoid inactivity to promote good health mentally and physically. For substantial health benefits, adults should participate in at least 150 minutes a week of moderate-intensity, or 75 minutes a week of vigorous-intensity aerobic physical activity, or an equivalent combination of moderate- and vigorous-intensity aerobic activity.<span id="dots">...</span><span id="more">  Aerobic activity should be performed in episodes of at least 10 minutes, and preferably, it should be spread throughout the week.New (July 2011) guidelines in the United Kingdom include the following points: The intensity at which we exercise is key, and light activity such as strolling and housework is unlikely to have much positive impact on the health of most people. For aerobic exercise to be beneficial it must raise your heartbeat and make you sweat. The more exercise you do, the better. Everyone should do a minimum of 150 minutes a week of moderate-intensity aerobic exercise but that really is the minimum for health benefits. If you can go beyond 150 minutes, you’ll gain even more health benefits. Sedentary time (time spent sitting down to watch TV, use a computer, read or listen to music) is bad for your health, even for those who are achieving 150 minutes of exercise a week. </span></p><button onclick="myFunction()" id="myBtn">Read more</button>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+
+
+</script>
+
+        
+                    
+                        </div>
+                         <div class="col-xl-6 col-sm-6"><img src="images/1.jpg" alt="My Thums"  class="img-fluid img-thumbnail" style="border-radius: 50%;"></div>
+                        </div>
+                 
+                    <hr>
+                  <div class="header" style="text-align: center;">
+<h3>Our Fitness Trainer</h3>
+</div>
+<div class="row">
+
+  <div class="col-xl-3"> <img src="images/12.jpg" alt="fitness" class="card-img-top img-fluid img-thumbnail" style="border-radius: 30%;">
+    <h5>Ram Shrestha</h5>
+
+    </div>
+
+<div class="col-xl-3"> <img src="images/13.jpg" alt="fitness" class="card-img-top img-fluid img-thumbnail" style="border-radius: 30%;">
+  <h5>Kp Khanal</h5>
+ 
+     </div>
+
+  <div class="col-xl-3"> <img src="images/14.jpg"  alt="fitness" class="card-img-top img-fluid img-thumbnail" style="border-radius:30%;">
+    <h5>Shyam Sharma</h5>
+   
+</div>
+  
+   <div class="col-xl-3"> <img src="images/15.jpg" alt ="fitness" class="card-img-top img-fluid img-thumbnail" style="border-radius: 30%;">
+    <h5>Rohan Pradhan</h5>
+
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	
+</script>
+<hr>
+    <h5>Copyright 2018 &copy; All Rights Reserved:Fitness Freak.com</h5>
+    <hr>
+</body>
+</html>

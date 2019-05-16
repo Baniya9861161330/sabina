@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>St Huxley's Community College</title>
+    <style>
+ /* FONT faces */
+
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('opensans-bold-webfont.woff2') format('woff2'),
+         url('opensans-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('opensans-bolditalic-webfont.woff2') format('woff2'),
+         url('opensans-bolditalic-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('opensans-extrabold-webfont.woff2') format('woff2'),
+         url('opensans-extrabold-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('opensans-extrabolditalic-webfont.woff2') format('woff2'),
+         url('opensans-extrabolditalic-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('opensans-italic-webfont.woff2') format('woff2'),
+         url('opensans-italic-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('opensans-light-webfont.woff2') format('woff2'),
+         url('opensans-light-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('opensans-lightitalic-webfont.woff2') format('woff2'),
+         url('opensans-lightitalic-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('opensans-regular-webfont.woff2') format('woff2'),
+         url('opensans-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('opensans-semibold-webfont.woff2') format('woff2'),
+         url('opensans-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('opensans-semibolditalic-webfont.woff2') format('woff2'),
+         url('opensans-semibolditalic-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'droid_serif';
+    src: url('Droid_font/droidserif-webfont.woff2') format('woff2'),
+         url('Droid_font/droidserif-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* General setup */
+
+ * {
+  box-sizing: border-box;
+  
+}
+
+html{font-size: 10px;}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  
+  font-family: serif;
+  line-height: 1.3;
+  
+}
+/* link styling Love Fear Hate */
+
+a[href*= "http"]{
+padding-left: .59em;
+text-decoration: none;
+outline: none;
+background: url('icons/external-link-52.png');
+background-size: .58em .58em;
+background-position: 0 2px;
+background-repeat: no-repeat;
+}
+
+a:link, a:visited, a:focus {
+    color: #BA7530;
+}
+
+a:hover, a:focus{
+    text-decoration: underline dotted;
+   color:  #D3B291;
+}
+
+a:active{color: #EEE8E2; 
+
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+header h1 {
+font-size: 3em;
+text-align: center;
+letter-spacing: 0.1em;
+font-family: 'open sans', sans-serif;
+}
+
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* Fonts */
+
+section h2{
+ font-size: 2em;
+ letter-spacing: 0.1em;
+ font-family: "open-sans", sans-serif;
+ font-weight: bold;
+}
+
+section p {
+    font-size: 1.5em;
+    font-family: 'droid_serif', cursive, serifs;
+
+}
+
+aside h2{
+  font-family: 'open sans', sans-serif;
+  font-size: 2em;
+}
+
+footer p{
+    font-size: 1.2em;
+}
+
+/* section paragraph content styling */
+
+section > p{
+    text-indent: 1em;
+
+}
+
+/* list styling */
+
+
+ul, ol, aside p {
+    font-size: 1.5em;
+}
+
+ li {
+  line-height: 1.5em;
+  list-style-type: square;
+}
+
+/* navigation tabs */
+nav{
+     padding-left:0;    
+  
+}
+
+nav a {
+     text-decoration: none;
+     outline: none;
+    }
+
+nav ul{
+    padding: 0;
+}
+
+
+nav ul li {
+    list-style-type: none;
+
+}
+
+
+nav ul li a{
+    display: inline-block;
+    font-family: 'open sans', sans-serif;
+    list-style-type: none;
+    line-height: 4em;
+    width:100%;
+    border: 1.2px solid #BA7530;
+    border-radius: 3px;
+    text-align: center;           
+    margin-top: 1em;
+}
+
+
+ nav #navMenu a:hover,nav #navMenu a:focus {
+  text-decoration: none;
+  background-color:#BA7530;
+  color: white;
+}
+ 
+    </style>
+  </head>
+
+        <header>
+          <h1>St Huxley's Community College</h1>
+        </header>
+      
+        <body>
+
+                <header>
+                  <h1>St Huxley's Community College</h1>
+                </header>
+              
+                <section>
+                    <h2>Brave new world</h2>
+              
+                    <p>It's a brave new world out there. Our children are being put in increasing more competitive situations, both during recreation, and as they start to move into the adult world of <a href="https://en.wikipedia.org/wiki/Examination">examinations</a>, <a href="https://en.wikipedia.org/wiki/Jobs">jobs</a>, <a href="https://en.wikipedia.org/wiki/Career">careers</a>, and other life choices. Having the wrong mindset, becoming <a href="https://en.wikipedia.org/wiki/Emotion">too emotional</a>, or making the wrong choices can contribute to them experiencing difficulty in taking their rightful place in today's ideal society.</p>
+              
+                    <p>As concerned parents, guardians or carers, you will no doubt want to give your children the best possible start in life — and you've come to the right place.</p>
+              
+                    <h2>The best start in life</h2>
+              
+                    <p>At St. Huxley's, we pride ourselves in not only giving our students a top quality education, but also giving them the societal and emotional intelligence they need to win big in the coming utopia. We not only excel at subjects such as genetics, data mining, and chemistry, but we also include compulsory lessons in:</p>
+              
+                    <ul>
+                      <li>Emotional control</li>
+                      <li>Judgement</li>
+                      <li>Assertion</li>
+                      <li>Focus and resolve</li>
+                    </ul>
+              
+                    <p>If you are interested, then you next steps will likely be to:</p>
+                    
+                    <ol>
+                      <li><a href="#">Call us</a> for more information</li>
+                      <li><a href="#">Ask for a brochure</a>, which includes signup form</li>
+                      <li><a href="#">Book a visit</a>!</li>
+                    </ol>
+                </section>
+              
+                <aside>
+              
+                  <h2>Top course choices</h2>
+              
+                  <ul>
+                    <li><a href="#">Genetic engineering</a></li>
+                    <li><a href="#">Genetic mutation</a></li>
+                    <li><a href="#">Organic Chemistry</a></li>
+                    <li><a href="#">Pharmaceuticals</a></li>
+                    <li><a href="#">Biochemistry with behaviour</a></li>
+                    <li><a href="#">Pure biochemistry</a></li>
+                    <li><a href="#">Data mining</a></li>
+                    <li><a href="#">Computer security</a></li>
+                    <li><a href="#">Bioinformatics</a></li>
+                    <li><a href="#">Cybernetics</a></li>
+                  </ul>
+              
+                  <p><a href="#">See more</a></p>
+              
+                </aside>
+              
+                <nav>
+              
+                  <ul id="navMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Finding us</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Prospectus</a></li>
+                  </ul>
+              
+                </nav>
+              
+                <footer>
+              
+                  <p>&copy; 2016 St Huxley's Community College</p>
+              
+                </footer>
+              
+                
+      
+        </body>
+        </html>

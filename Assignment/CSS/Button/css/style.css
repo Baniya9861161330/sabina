@@ -1,0 +1,22 @@
+html {
+    font-family: sans-serif;
+  }
+
+p{
+    width:200px;
+    height:40px;
+    font-size:18px;
+    background-color:red;
+    margin:auto auto;
+    text-align:center;
+    padding-top:20px;
+    color:red;
+    text-shadow:2px 2px 2px black;
+    border-radius:15px;
+    border:1px solid black;
+    box-shadow: 
+    inset 2px 2px 3px rgba(255,255,255,0.6),
+                inset -2px -2px 3px rgba(0,0,0,0.6),
+                2px 2px 5px black;
+    background-image:linear-gradient(to bottom right, red, rgb(180, 10, 10));
+}

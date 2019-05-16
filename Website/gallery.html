@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta name ="author" content="your name"/>
+<link href="style.css" rel="stylesheet">
+ <link href="css/mystyle.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>My webpage layout</title>
+
+
+<style> 
+
+body{background-size: cover; margin-bottom: -3px;}
+
+.title-text{padding: 0 25px 0 0;  border-right: 5px solid #BE2525; font-size: 24px;}
+
+.about-list  li{padding:5px 0;  font-size: 18px; }
+
+.about-text p{color:#444;}
+
+/*portfolio section*/
+
+#portfolio{background-color: #F0F1E9;}
+
+.fit-image{height: 100%; width: 100%}
+.title{font-size: 24px; margin-bottom: 50px;}
+
+/*Image-Grid*/
+
+#my-grid{margin-top: 50px;}
+.grid-padding{padding:0 8px;}
+
+.grid-padding img{margin-bottom: 15px; transition: 0.8s ease;}
+
+.grid-padding img:hover{box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.5);}
+
+.col-sm-4{padding-right: 30px;}
+ h5{text-align: center;}
+
+ a{color:white; font-size: 24px;}
+</style>
+
+</head>
+<body id="my-portfolio" data-spy="scroll" data-target=" .navbar" data-offset="60">
+	<nav class="navbar navbar-expand-lg navbar-active active-light" style="background-color: black;">
+  <a class="navbar-brand" href="#"><img src="images/20.jpg"  alt="fitness" style="border-radius: 70%; height: 100px; width: 150px;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Wireframes.html">Wireframes</a>
+      </li>
+      
+      </ul>
+
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</div>
+</nav>
+
+
+<!---Header for navbar and banner text-->
+<header class="container-fluid bg-header" id="Home">
+</header>
+
+
+
+
+  <!--portfolio section begins-->
+  <section class="section-padding" id="portfolio">
+
+    <div class="container">
+
+      <!--Title text-->
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="title text-center">
+            Lets <span class="decorate">See</span>Our Gallery
+          </h2>
+        </div>
+      </div>
+  <!--image grid of thumbnails-->
+    <div class="container">
+
+      <div id="my-grid" class="grid-padding">
+        <div class="row">
+
+          <div class="col-sm-4">
+           <div class="row"><a href="images/1.jpg" data-toggle="lightbox"><img src="images/1.jpg" alt="Fitness" class="fit-image" onclick="openModel();currentSlide(1)"></a></div> 
+
+            <div class="row"><a href="images/2.jpg" data-toggle="lightbox"><img src="images/2.jpg" alt="fintness" class="fit-image" onclick="openModel();currentSlide(2)"></a></div> 
+
+            <div class="row"><a href="images/3.jpg" data-toggle="lightbox"><img src="images/3.jpg" alt="Fitness" class="fit-image" onclick="openModel();currentSlide(3)"></a></div> 
+
+             <div class="row"><a href="images/4.jpg" data-toggle="lightbox"><img src="images/4.jpg" alt="fintness" class="fit-image" onclick="openModel();currentSlide(4)"></a></div> 
+        </div>
+
+
+          <div class="col-sm-4">
+
+             <div class="row"><a href="images/11.jpg" data-toggle="lightbox"><img src="images/11.jpg" alt="fintness" class="fit-image" onclick="openModel();currentSlide(5)"></a></div> 
+
+            <div class="row"><a href="images/16.jpg" data-toggle="lightbox"><img src="images/16.jpg" alt="fintness" class="fit-image" onclick="openModel();currentSlide(6)"></a></div> 
+
+           <!-- <div class="row"><a href="images/meditation.png" data-toggle="lightbox"><img src="images/meditation.png" class="fit-image" onclick="openModel();currentSlide(7)"></a></div> 
+
+             <div class="row"><a href="images/5.jpg" data-toggle="lightbox"><img src="images/5.jpg" class="fit-image" onclick="openModel();currentSlide(8)"></a></div> -->
+            
+          </div>
+
+         <div class="col-sm-4">
+            <div class="row"><a href="images/meditation.png" data-toggle="lightbox"><img src="images/meditation.png" alt="fintness" class="fit-image" onclick="openModel();currentSlide(9)"></a></div> 
+
+            <div class="row"><a href="images/14.jpg" data-toggle="lightbox"><img src="images/14.jpg" class="fit-image" alt="Fitness" onclick="openModel();currentSlide(10)"></a></div> 
+
+            <div class="row"><a href="images/17.jpg" data-toggle="lightbox"><img src="images/17.jpg" class="fit-image" alt="Fitness" onclick="openModel();currentSlide(11)"></a></div> 
+
+             <div class="row"><a href="images/gym.jpg" data-toggle="lightbox"><img src="images/gym.jpg" class="fit-image" alt="Fitness" onclick="openModel();currentSlide(12)"></a></div> 
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    </div>
+  </section>
+  <!--portfolio section ends-->
+
+<hr>
+    <h5>Copyright 2018 &copy; All Rights Reserved:Fitness Freak.com</h5>
+    <hr>
+  
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
